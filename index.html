@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="shortcut icon" href="img/blacksquare.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>pinpin</title>
+    </head>
+<body>
+    <header class="header">
+        <div class="container__header">
+            <div class="header__body">
+                <a href="#main" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li>
+                            <a href="#catalog" class="header__link">Catalog</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="header__link">Project</a>
+                        </li>
+                        <li>
+                            <a href="#materials" class="header__link">Materials</a>
+                        </li>
+                        <li>
+                            <a href="#delivery" class="header__link">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#reviews" class="header__link">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="header__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="phone__header">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <p>(619) 123-4567</p>
+                    </div>
+                </nav>
+        </div>
+    </header>
+    <section id="main">
+        <div class="container">
+            <h1>Creating Pins That Inspire</h1>
+        </div>
+    </section>
+    <section id="catalog">
+        <div class="container">
+            <div class="catalog__body">
+                <div class="section__title">
+                    <h2>New Collection</h2>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                </div>
+                <div class="catalog__links">
+                    <a href="#pins" class="catalog__link active__link" onclick="currentSlide(1)">Pins</a>
+                    <a href="#patches" class="catalog__link" onclick="currentSlide(2)">Patches</a>
+                </div>
+                <div class="catalog__list grid slider" id="pins">
+                    <div class="catalog__item grid">
+                        <div class="catalog__item__photo" id="img1"></div>
+                        <div class="catalog__item__card">
+                            <div class="catalog__item__description">
+                                <p class="code">SKU: DA1304-018</p>
+                                <p class="catalog__item__title">Leaf Pin</p>
+                                <p class="catalog__item__subtitle">A mosaic leaf with a silver outline for those who love the natural world.</p>
+                            </div>
+                            <div class="catalog__item__buttons">
+                                <p class="catalog__item__buttons__title">Material</p>
+                                <div class="buttons">
+                                    <button class="button">
+                                        <div class="material" id="gold__button"></div>
+                                        <div class="material__name">Gold</div>
+                                    </button>
+                                    <button class="button">
+                                        <div class="material" id="silver__button"></div>
+                                        <div class="material__name">Silver</div>
+                                    </button>
+                                    <button class="button">
+                                        <div class="material" id="black__button"></div>
+                                        <div class="material__name">Royal Black Plastic</div>
+                                    </button>
+                                </div>
+                                <div class="buy">
+                                    <button class="add" onclick="openOrderPopup()">Order Now</button>
+                                    <p class="price">$59</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item grid">
+                        <div class="catalog__item__photo" id="img2"></div>
+                        <div class="catalog__item__card">
+                            <div class="catalog__item__description">
+                                <p class="code">SKU: DA1305-017</p>
+                                <p class="catalog__item__title">Hand Pin</p>
+                                <p class="catalog__item__subtitle">A combination of black and gold colors will complement any outfit.</p>
+                            </div>
+                            <div class="catalog__item__buttons">
+                                <p class="catalog__item__buttons__title">Material</p>
+                                <div class="buttons">
+                                    <button class="button">
+                                        <div class="material" id="gold__button"></div>
+                                        <div class="material__name">Gold</div>
+                                    </button>
+                                    <button class="button">
+                                        <div class="material" id="silver__button"></div>
+                                        <div class="material__name">Silver</div>
+                                    </button>
+                                    <button class="button">
+                                        <div class="material" id="black__button"></div>
+                                        <div class="material__name">Royal Black Plastic</div>
+                                    </button>
+                                </div>
+                                <div class="buy">
+                                    <button class="add" onclick="openOrderPopup()">Order Now</button>
+                                    <p class="price">$119</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item grid">
+                        <div class="catalog__item__photo" id="img3"></div>
+                        <div class="catalog__item__card">
+                            <div class="catalog__item__description">
+                                <p class="code">SKU: DA1303-019</p>
+                                <p class="catalog__item__title">Vampire Pin</p>
+                                <p class="catalog__item__subtitle">The bold red color of the pin perfectly matches light-colored jeans.</p>
+                            </div>
+                            <div class="catalog__item__buttons">
+                                <p class="catalog__item__buttons__title">Material</p>
+                                <div class="buttons">
+                                    <button class="button">
+                                        <div class="material" id="gold__button"></div>
+                                        <div class="material__name">Gold</div>
+                                    </button>
+                                    <button class="button">
+                                        <div class="material" id="silver__button"></div>
+                                        <div class="material__name">Silver</div>
+                                    </button>
+                                    <button class="button">
+                                        <div class="material" id="black__button"></div>
+                                        <div class="material__name">Royal Black Plastic</div>
+                                    </button>
+                                </div>
+                                <div class="buy">
+                                    <button class="add" onclick="openOrderPopup()">Order Now</button>
+                                    <p class="price">$19</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__list grid slider" id="patches">
+                    <div class="catalog__item grid">
+                        <div class="catalog__item__photo" id="img4"></div>
+                        <div class="catalog__item__card">
+                            <div class="catalog__item__description">
+                                <p class="code">SKU: MR2003-011</p>
+                                <p class="catalog__item__title">Flamingo Cafe Patch</p>
+                                <p class="catalog__item__subtitle">A mesmerizing patch of the legendary Flamingo cafe will fascinate those who like original prints and tropical birds.</p>
+                            </div>
+                            <div class="catalog__item__color">
+                                <p class="catalog__item__color__title">Outline color</p>
+                                <div class="colors">
+                                    <button class="color__button" id="color__black"></button>
+                                    <button class="color__button" id="color__white"></button>
+                                    <button class="color__button" id="color__blue"></button>
+                                </div>
+                                <div class="buy">
+                                    <button class="add" onclick="openOrderPopup()">Order Now</button>
+                                    <p class="price">$9</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item grid">
+                        <div class="catalog__item__photo" id="img5"></div>
+                        <div class="catalog__item__card">
+                            <div class="catalog__item__description">
+                                <p class="code">SKU: MR2003-051</p>
+                                <p class="catalog__item__title">Snap Patch</p>
+                                <p class="catalog__item__subtitle">A patch with a baseball cap on the royal blue background will look great on a pair of jeans, a black hoodie or a summer tote bag.</p>
+                            </div>
+                            <div class="catalog__item__color">
+                                <p class="catalog__item__color__title">Outline color</p>
+                                <div class="colors">
+                                    <button class="color__button" id="color__blue"></button>
+                                    <button class="color__button" id="color__black"></button>
+                                    <button class="color__button" id="color__grey"></button>
+                                </div>
+                                <div class="buy">
+                                    <button class="add" onclick="openOrderPopup()">Order Now</button>
+                                    <p class="price">$9</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__item grid">
+                        <div class="catalog__item__photo" id="img6"></div>
+                        <div class="catalog__item__card">
+                            <div class="catalog__item__description">
+                                <p class="code">SKU: MR2003-041</p>
+                                <p class="catalog__item__title">Drink Patch</p>
+                                <p class="catalog__item__subtitle">A green bottle stands out from the gray background. Refreshing drinks aren't only cool in a scorching day, they make good patches too.</p>
+                            </div>
+                            <div class="catalog__item__color">
+                                <p class="catalog__item__color__title">Outline color</p>
+                                <div class="colors">
+                                    <button class="color__button" id="color__black"></button>
+                                    <button class="color__button" id="color__white"></button>
+                                    <button class="color__button" id="color__green"></button>
+                                </div>
+                                <div class="buy">
+                                    <button class="add" onclick="openOrderPopup()">Order Now</button>
+                                    <p class="price">$9</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <div class="container">
+            <div class="project__body">
+                <div id="lips"></div>
+                <p class="text">Every season we design a new collection of pins, produce it and never repeat it again. So if you've taken a shine to some pin, got and get it, without thinking twice. Bring your personal touch with a sprinkle of bright pins created by talented local artists and colored by hand.</p>
+                <p class="logo__title">Best regards,</p>
+                <div id="grey__logo"></div>
+            </div>
+        </div>
+    </section>
+    <section id="materials">
+        <div class="container">
+            <div class="materials__body grid">
+                <div class="materials__image"></div>
+                <div class="materials__description">
+                    <div class="section__title">
+                        <h2>Materials</h2>
+                        <div class="hr">
+                            <hr>
+                        </div>
+                    </div>
+                    <p class="materials__text">We pay meticulous attention to the quality of pins to ensure they will stay bright and durable. We pick only high-quality materials. Safety-pin backings securely fasten to different types of fabric and don't leave any punctures.  We use the following base materials:</p>
+                    <div class="materials__list">
+                        <div class="materials__item">
+                            <div class="material" id="gold"></div>
+                            <p class="material__name">Gold</p>
+                        </div>
+                        <div class="materials__item">
+                            <div class="material" id="silver"></div>
+                            <p class="material__name">Silver</p>
+                        </div>
+                        <div class="materials__item">
+                            <div class="material" id="black"></div>
+                            <p class="material__name">Royal Black plastic</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="delivery">
+        <div class="container">
+            <div class="delivery__body">
+                <div class="section__title">
+                    <h2>Delivery</h2>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                </div>
+                <div class="delivery__list grid">
+                    <div class="delivery__item">
+                        <div class="del__img" id="del1"></div>
+                        <p class="del__title">In-Store Pickup</p>
+                        <p class="del__subtitle">Free —  10 AM to 8 PM, 7 days a week <br> Location: 940 Broadway, San Diego, CA 92101</p>
+                    </div>
+                    <div class="delivery__item">
+                        <div class="del__img" id="del2"></div>
+                        <p class="del__title">Courier</p>
+                        <p class="del__subtitle">$5 — for addresses within the U.S. <br> from 5 to 14 business days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <div class="reviews__body">
+                <div class="section__title">
+                    <h2>Reviews</h2>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                </div>
+                <div class="reviews__list grid">
+                    <div class="reviews__item">
+                        <p class="reviews__text">
+                            I've been purchasing pins from for a couple of years. They're always of the outstanding quality, and no problems with delivery. Love that they give swags to regular customers. 
+                        </p>
+                        <div class="reviews__person">
+                            <div class="person__img" id="jack"></div>
+                            <div class="person__name">
+                                <p class="person__name__title">Jack Garcia</p>
+                                <p class="person__name__subtitle">Washington</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <p class="reviews__text">
+                            I gifted my first pin of a horned owl to  a friend and got lost! Since then I've been buying each and every new collection I could lay my hand on. My most favorite ones are of the vampire theme. 
+                        </p>
+                        <div class="reviews__person">
+                            <div class="person__img" id="kate"></div>
+                            <div class="person__name">
+                                <p class="person__name__title">Kate Johnson</p>
+                                <p class="person__name__subtitle">Franklin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <p class="reviews__text">
+                            I adore these pins and try to order some from each new collection. You guys can always surprise even your patrons. Looking forward to new arrivals!
+                        </p>
+                        <div class="reviews__person">
+                            <div class="person__img" id="vicky"></div>
+                            <div class="person__name">
+                                <p class="person__name__title">Vicky  Brown</p>
+                                <p class="person__name__subtitle">Georgetown</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <p class="reviews__text">
+                            As an artist myself, I appreciate that you come up with unusual ideas to spur the creativity. Hats off to Pinpin! I only wish you would organize more collaborations with young artists. 
+                        </p>
+                        <div class="reviews__person">
+                            <div class="person__img" id="dan"></div>
+                            <div class="person__name">
+                                <p class="person__name__title">Dan Lee</p>
+                                <p class="person__name__subtitle">Arlington</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="contact__body">
+                <div class="section__title">
+                    <h2>Contact Us</h2>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                </div>
+                <p class="contact__text">Our workshop and store is settled in San Diego — guests are always welcome! Come to have a look at all the pins, meet the team and experience the production process firsthand.</p>
+                <div class="contact__list grid">
+                    <div class="contact__item">
+                        <div class="contact__img" id="c1"></div>
+                        <p class="contact__title">Hours</p>
+                        <p class="contact__subtitle">10 AM to 8 PM <br> 7 days a week</p>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__img" id="c2"></div>
+                        <p class="contact__title">Get in Touch</p>
+                        <p class="contact__subtitle"><span>(619) 123-4567</span><br> badge@google.com</p>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__img" id="c3"></div>
+                        <p class="contact__title">Location</p>
+                        <p class="contact__subtitle">Suite 309, 940 Broadway, San Diego, <br> CA 92101</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="quote">
+        <div class="container">
+            <div class="quote__body">
+                <h2>Wholesale</h2>
+                <p class="quote__text">Although we design limited seasonal collections, we also produce a standard range  of pins that you can order wholesale to any place within the U.S.</p>
+                <button class="quote" onclick="openOrderPopup()">Request a Quote</button>
+            </div>
+            <div class="popup">
+                <div class="form__popup" id="order__popup">
+                    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){window.location='submission.html'}"></iframe>
+                    <form action="https://docs.google.com/forms/u/1/d/16d40BaPCASMIEFX5g-4VajebBG6ISPPpCrn2QENCRwg/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted = true" class="form__container">
+        
+                        <h2>Order now</h2>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="entry.1683149628">
+                        </div>
+                        <div>
+                            <label for="phone">Phone number *</label>
+                            <input type="tel" id="phone" name="entry.742769227" required>
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <textarea name="entry.2123252079" id="message" width="100%" height="100%"></textarea>
+                        </div>
+                        <div>
+                        <button type="submit" class="btn">Submit</button>
+                        </div>
+                        <button type="button" class="btn__cancel" onclick="closeOrderPopup()">&times;</button>    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__body">
+                <a href="#main" class="footer__logo"></a>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#catalog" class="footer__link">Catalog</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="footer__link">Project</a>
+                        </li>
+                        <li>
+                            <a href="#materials" class="footer__link">Materials</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#delivery" class="footer__link">Delivery</a>
+                        </li>
+                        <li>
+                            <a href="#reviews" class="footer__link">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" class="social" id="fb" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="social" id="inst" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/257a877408.js" crossorigin="anonymous"></script>
+</body>
+</html>
